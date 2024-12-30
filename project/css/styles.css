@@ -1,0 +1,202 @@
+/* General Reset */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar.transparent {
+    
+    box-shadow: none;
+}
+
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    margin: 0 15px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Default color for transparent navbar */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar.scrolled a {
+    color: #333; /* Darker color for scrolled navbar */
+}
+
+.navbar-list a:hover {
+    color: #007BFF;
+}
+
+/* Carousel Section */
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    filter: blur(2px);
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.carousel-caption h1,
+.carousel-caption h3,
+.carousel-caption p {
+    margin: 10px 0;
+}
+
+/* Section Padding */
+.section-padding {
+    padding: 60px 0;
+    background-color: #f9f9f9; /* Light background for better readability */
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    color: #333;
+}
+
+.section-title-header {
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section-title-header p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify; /* For better readability */
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-list {
+        flex-wrap: wrap;
+    }
+
+    .navbar-list li {
+        margin: 5px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 24px;
+    }
+
+    .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .section-title-header p {
+        font-size: 14px;
+    }
+}
+
+/* Additional Navbar Styles */
+.navbar.white-background {
+    background-color: #fff !important;
+    color: #333;
+}
+
+.navbar.white-background a {
+    color: #333 !important;
+}
+
+.navbar.white-background a:hover {
+    color: #007BFF !important;
+}

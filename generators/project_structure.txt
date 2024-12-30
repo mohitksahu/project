@@ -1,0 +1,13 @@
+project/
+    css/
+    images/
+    js/
+    index.html
+    README.md
+    css/
+        nav.css
+        styles.css
+    images/
+    js/
+        nav.js
+        scripts.js
