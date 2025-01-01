@@ -1,0 +1,78 @@
+/* Section Styling */
+#pricing {
+    background-color: whitesmoke; /* Section background color */
+    padding: 60px 0; /* Add spacing around the section */
+    text-align: center; /* Center-align all text */
+}
+
+.section-title-header {
+    margin-bottom: 40px; /* Spacing below the title */
+}
+
+.section-title {
+    font-size: 32px; /* Title font size */
+    color: #333; /* Dark gray color for the title */
+}
+
+.section-title + p {
+    font-size: 18px; /* Subtitle font size */
+    color: #666; /* Light gray color for the subtitle */
+}
+
+/* Price Block Styling */
+.price-block-wrapper {
+    background: #ffffff; /* White background for the price blocks */
+    padding: 30px; /* Internal padding */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    text-align: center; /* Center-align the content */
+}
+
+.price-block-wrapper:hover {
+    transform: translateY(-10px); /* Move block upwards on hover */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add deeper shadow on hover */
+}
+
+.price-block-wrapper .colmun-title h5 {
+    font-size: 20px; /* Title font size inside blocks */
+    font-weight: 600; /* Bold font weight */
+    margin-bottom: 15px; /* Spacing below the title */
+    color: #555; /* Medium gray color for the block title */
+}
+
+.price-block-wrapper .price h2 {
+    font-size: 28px; /* Price font size */
+    margin-bottom: 20px; /* Spacing below the price */
+}
+
+/* Button Styling */
+.btn-common {
+    display: inline-block; /* Inline block to make button-size adjustable */
+    padding: 10px 25px; /* Padding for the button */
+    font-size: 16px; /* Font size for the button */
+    color: #fff; /* White text color */
+    background-color: #007bff; /* Primary blue background color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.btn-common:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    box-shadow: 0 5px 15px rgba(0, 91, 187, 0.4); /* Add shadow effect on hover */
+}
+
+/* Responsive Layout for Blocks */
+.row {
+    display: flex;
+    justify-content: center; /* Center-align all the price blocks horizontally */
+    gap: 20px; /* Add spacing between blocks */
+    flex-wrap: wrap; /* Wrap blocks on smaller screens */
+}
+
+.container {
+    max-width: 1200px; /* Restrict the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add padding for smaller screens */
+}

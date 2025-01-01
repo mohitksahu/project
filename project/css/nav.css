@@ -1,0 +1,59 @@
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.navbar.transparent {
+    
+    box-shadow: none;
+}
+
+.navbar.scrolled {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    margin: 0 15px;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff; /* Default color for transparent navbar */
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar.scrolled a {
+    color: #333; /* Darker color for scrolled navbar */
+}
+
+.navbar-list a:hover {
+    color: #007BFF;
+}
+
+/* Additional Navbar Styles */
+.navbar.white-background {
+    background-color: #fff !important;
+    color: #333;
+}
+
+.navbar.white-background a {
+    color: #333 !important;
+}
+
+.navbar.white-background a:hover {
+    color: #007BFF !important;
+}

@@ -1,0 +1,33 @@
+
+.small {
+    font-size: 22px;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    color: #333;
+}
+
+.section-title-header {
+    margin-bottom: 40px;
+}
+
+
+
+.section-title-header p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: justify; /* For better readability */
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 30px 0;
+}
+

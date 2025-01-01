@@ -1,0 +1,58 @@
+/* Card Styles */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col-6 {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+/* Table Styles */
+.dates-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.dates-table th, .dates-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.dates-table th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+.dates-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.dates-table tr:hover {
+    background-color: #f1f1f1;
+}
+

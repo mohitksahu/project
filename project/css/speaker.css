@@ -1,0 +1,43 @@
+#gallery {
+    padding: 60px 0; /* Add padding to the section */
+    text-align: center; /* Center-align the content */
+}
+
+#gallery .row {
+    display: flex;
+    justify-content: center; /* Align images to the center horizontally */
+    align-items: center; /* Align images vertically to the center */
+    gap: 20px; /* Add space between the images */
+}
+
+#gallery .gallery-box {
+    width: 300px; /* Fixed width for each image box */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#gallery .gallery-box:hover {
+    transform: translateY(-10px); /* Move the box 10px up */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+#gallery .img-thumb {
+    overflow: hidden;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: white; /* Add background color */
+}
+
+#gallery .img-thumb img {
+    width: 100%; /* Ensure the image scales to fit the container */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+.container-sp {
+    background-color: #f0f0f0; /* Light grey background color */
+    display: flex;
+    justify-content: center; /* Center the entire container content */
+    flex-direction: column; /* Align content in a column */
+    align-items: center; /* Center items vertically */
+    padding: 20px; /* Add padding around the container */
+}
