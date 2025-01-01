@@ -8,7 +8,6 @@
 }
 
 .navbar.transparent {
-    
     box-shadow: none;
 }
 
@@ -30,18 +29,40 @@
 }
 
 .navbar-list a {
+    position: relative; /* For underline positioning */
     text-decoration: none;
-    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
     color: #fff; /* Default color for transparent navbar */
     transition: color 0.3s ease-in-out;
+}
+
+.navbar-list a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Adjust underline position */
+    width: 0;
+    height: 2px;
+    background-color: #007BFF; /* Underline color */
+    transition: width 0.3s ease-in-out;
 }
 
 .navbar.scrolled a {
     color: #333; /* Darker color for scrolled navbar */
 }
 
-.navbar-list a:hover {
+.navbar.scrolled a::after {
+    background-color: #007BFF; /* Ensure underline color matches hover state */
+}
+
+.navbar-list a:hover,
+.navbar-list a.active {
     color: #007BFF;
+}
+
+.navbar-list a:hover::after,
+.navbar-list a.active::after {
+    width: 100%; /* Full underline width on hover or active */
 }
 
 /* Additional Navbar Styles */
