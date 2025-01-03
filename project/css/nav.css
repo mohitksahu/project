@@ -1,4 +1,3 @@
-/* Navbar Styles */
 .navbar {
     position: fixed;
     top: 0;
@@ -8,6 +7,7 @@
 }
 
 .navbar.transparent {
+    background: linear-gradient(to bottom, rgba(128, 128, 128, 2), rgba(0, 0, 0, 0));
     box-shadow: none;
 }
 

@@ -1,0 +1,82 @@
+/* General Section Styles */
+#pastevents {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.section-title-header {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.section-title + p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Flexbox Container for Events */
+.event-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centers the items horizontally */
+}
+
+/* Blog Item Styles */
+.blog-item {
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 300px; /* Fixed width to ensure cards align properly */
+    text-align: center;
+}
+
+.blog-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.blog-image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.descr {
+    padding: 15px;
+    text-align: center;
+}
+
+.descr .tag {
+    font-size: 12px;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 8px;
+}
+
+.descr .title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.descr .title a {
+    color: #333;
+    text-decoration: none;
+}
+
+.descr .title a:hover {
+    color: #007bff;
+}
+
+.meta-tags {
+    font-size: 12px;
+    color: #666;
+}

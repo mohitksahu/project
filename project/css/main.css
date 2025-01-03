@@ -88,3 +88,59 @@ footer {
     padding: 40px 0;
     background-color: whitesmoke;
 }
+
+/* General Footer Styles */
+/* Footer Layout */
+.footer-row {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly, aligning left and right */
+    align-items: flex-start; /* Align items at the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-left {
+    width: 60%; /* Adjust the width as needed */
+    text-align: left; /* Align text to the left */
+}
+
+.footer-right {
+    width: 35%; /* Adjust the width as needed */
+    text-align: right; /* Align text to the right */
+}
+
+.footer-social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-social li {
+    margin-bottom: 10px; /* Space between social links */
+}
+
+.footer-social li a {
+    text-decoration: none;
+    color: #007BFF; /* Link color */
+    transition: color 0.3s ease;
+}
+
+.footer-social li a:hover {
+    color: #0056b3; /* Hover color */
+}
+
+/* Copyright Section */
+#copyright {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+}
+
+#copyright a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#copyright a:hover {
+    color: #0056b3;
+}

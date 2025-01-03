@@ -1,6 +1,6 @@
 
 .small {
-    font-size: 22px;
+    font-size: large;
 }
 
 /* About Section */
@@ -9,11 +9,13 @@
     color: #333;
 }
 
+#about ul {
+    padding-left: 40px;
+}
+
 .section-title-header {
     margin-bottom: 40px;
 }
-
-
 
 .section-title-header p {
     font-size: 16px;
@@ -31,3 +33,107 @@ hr {
     margin: 30px 0;
 }
 
+/* Section styling */
+.topics-section {
+    background-color: #f5f5f5; /* Section background color */
+    padding: 10px 20px;
+}
+
+/* Container for the topics */
+.topics-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual topic boxes */
+.topics-container .topic-box {
+    background-color: #ffffff; /* White background for boxes */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: right; /* Align headings and subtopics to the right */
+    margin-bottom: 20px; /* Space for adding more topics later */
+    font-family: monospace;
+}
+
+/* Hover effect for topic boxes */
+.topics-container .topic-box:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Topic box headings */
+.topics-container .topic-box h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #333333;
+    text-align: left; /* Align heading to the right */
+}
+
+/* Subtopics styling */
+.topics-container .subtopics {
+    list-style-type: disc; /* Bullet points for subtopics */
+    margin: 10px 0 0 20px; /* Proper spacing */
+    padding: 0;
+    color: #666666;
+    font-size: 14px;
+    text-align: left; /* Align points to the right */
+}
+
+/* Subtopics individual list items */
+.topics-container .subtopics li {
+    margin-bottom: 10px; /* Space between each point */
+}
+
+
+/* Dropdown container styling */
+.dropdown {
+    position: relative;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Dropdown button styling */
+.dropdown-button {
+    background-color: rgb(248, 223, 194); /* Light peach background */
+    color: black;
+    font-size: 18px;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Dropdown content styling */
+.dropdown-content {
+    display: none; /* Initially hidden */
+    background-color: white; /* White background */
+    z-index: 1;
+    width: 100%; /* Match the width of the button */
+}
+
+/* List styling */
+.dropdown-content ul {
+    list-style: disc; /* Use bullet points */
+    margin: 0;
+}
+
+.dropdown-content li {
+    font-size: 16px; /* Slightly smaller font size */
+    color: black;
+    line-height: 1.5; /* Add spacing for readability */
+}
+
+/* Show dropdown content when active */
+.dropdown-content.show {
+    display: block;
+}
+
+.about-soa {
+    font-size: medium;
+}

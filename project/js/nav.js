@@ -1,3 +1,4 @@
+
 window.addEventListener("scroll", function () {
     const navbar = document.getElementById("navbar");
     const sections = document.querySelectorAll("section");
@@ -17,7 +18,7 @@ window.addEventListener("scroll", function () {
 
     // Highlight active section in navbar
     sections.forEach((section) => {
-        const sectionTop = section.offsetTop - 70; // Adjust for navbar height
+        const sectionTop = section.offsetTop -200; // Adjust for navbar height
         const sectionHeight = section.offsetHeight;
 
         if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
@@ -31,6 +32,8 @@ window.addEventListener("scroll", function () {
         }
     });
 });
+
+
 
 // Smooth scroll for anchor links
 document.querySelectorAll(".navbar-list a").forEach((anchor) => {
