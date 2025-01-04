@@ -64,8 +64,8 @@
 /* Top Left Image */
 .top-left-image {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 592px;
+  left: 490px;
   z-index: 10;
 }
 
@@ -78,8 +78,8 @@
 /* Top Right Image */
 .top-right-image {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 592px;
+  right: 490px;
   z-index: 10;
 }
 
