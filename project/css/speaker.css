@@ -12,6 +12,7 @@
 
 #gallery .gallery-box {
     width: 300px; /* Fixed width for each image box */
+    height: auto;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
